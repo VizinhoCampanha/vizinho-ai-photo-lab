@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIZINHO AI PHOTO LAB</title>
+<style>
+:root{--red:#e21b23;--bg:#090909;--card:#141414;--text:#f5f5f5;--muted:#aaa}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(145deg,#070707,#151515);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.wrap{max-width:760px;margin:auto;padding:28px 18px 60px}.logo{font-weight:900;letter-spacing:5px;font-size:34px}.tag{color:#999;letter-spacing:2px;font-size:12px;margin-top:4px}
+.hero{margin-top:30px;padding:28px 22px;border:1px solid #292929;border-radius:20px;background:linear-gradient(160deg,#191919,#0e0e0e);box-shadow:0 20px 60px #0008}
+h1{font-size:36px;line-height:1;margin:0 0 12px;text-transform:uppercase} .red{color:var(--red)}
+p{color:#bbb;line-height:1.55}.btn{display:block;width:100%;border:0;border-radius:13px;padding:16px;margin:14px 0;background:var(--red);color:white;font-weight:900;font-size:16px;cursor:pointer}
+.section{margin-top:18px;padding:22px;border-radius:18px;background:var(--card);border:1px solid #242424}.section h2{margin:0 0 14px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.cmd{background:#0d0d0d;border:1px solid #292929;padding:11px;border-radius:10px;font-family:monospace;color:#eee}.cmd b{color:var(--red)}
+.steps{counter-reset:s}.step{margin:10px 0;color:#ccc}.step:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:25px;height:25px;border-radius:50%;background:var(--red);font-weight:bold;margin-right:8px}
+.note{font-size:12px;color:#777}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#fff;color:#111;padding:11px 16px;border-radius:30px;display:none;font-weight:bold}
+footer{text-align:center;color:#666;margin-top:35px;font-size:12px;letter-spacing:1px}
+@media(max-width:520px){h1{font-size:29px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">VIZINHO</div>
+  <div class="tag">AI PHOTO LAB • 133</div>
+  <section class="hero">
+    <h1>Diretor de Imagem<br><span class="red">VIZINHO</span></h1>
+    <p>O prompt que transforma o ChatGPT em um diretor de fotografia para suas fotos de moto, aventura, lifestyle e conteúdo.</p>
+    <button class="btn" onclick="copyPrompt()">📋 COPIAR PROMPT COMPLETO</button>
+    <div class="note">Toque no botão, abra uma nova conversa no ChatGPT e cole o conteúdo.</div>
+  </section>
+  <section class="section">
+    <h2>🔥 Como usar</h2>
+    <div class="steps">
+      <div class="step">Copie o prompt.</div>
+      <div class="step">Abra uma nova conversa no ChatGPT.</div>
+      <div class="step">Cole o prompt e envie.</div>
+      <div class="step">Envie sua foto.</div>
+      <div class="step">Use comandos começando por <b>/</b>.</div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>📸 Comandos rápidos</h2>
+    <div class="grid">
+      <div class="cmd"><b>/proshot</b><br>Foto profissional</div>
+      <div class="cmd"><b>/bokeh</b><br>Fundo desfocado</div>
+      <div class="cmd"><b>/cinematic</b><br>Visual cinematográfico</div>
+      <div class="cmd"><b>/droneview</b><br>Visão aérea</div>
+      <div class="cmd"><b>/lowangle</b><br>Câmera baixa</div>
+      <div class="cmd"><b>/goldenhour</b><br>Luz dourada</div>
+      <div class="cmd"><b>/rally</b><br>Estética rally</div>
+      <div class="cmd"><b>/offroad</b><br>Off-road</div>
+      <div class="cmd"><b>/poster</b><br>Pôster</div>
+      <div class="cmd"><b>/instagram</b><br>Instagram</div>
+      <div class="cmd"><b>/VIZINHO133</b><br>Identidade VIZINHO</div>
+      <div class="cmd"><b>/RAVENNA</b><br>Modo Africa Twin</div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>🏍️ Exemplos</h2>
+    <p><b>/lowangle + /bokeh + /goldenhour</b></p>
+    <p><b>/rally + /dust + /VIZINHO133</b></p>
+    <p><b>/droneview + /cinematic</b></p>
+    <p><b>/PRO + /instagram</b></p>
+  </section>
+  <footer>VIZINHO 133 • ADVENTURE • OFF-ROAD • LIFESTYLE</footer>
+</div>
+<div class="toast" id="toast">Prompt copiado! 🔥</div>
+<script>
+const promptText = `PROMPT DIRETOR DE IMAGEM VIZINHO
+
+Você será meu DIRETOR DE IMAGEM VIZINHO, dedicado à criação, edição, transformação e direção visual de imagens.
+
+Ao receber uma imagem, analise assunto, enquadramento, perspectiva, iluminação, fundo, cores, composição, profundidade de campo e objetivo provável.
+
+Se eu enviar uma imagem sem comando, sugira até 3 tratamentos adequados e explique brevemente o motivo.
+
+Se eu enviar um comando começando por "/", execute o tratamento correspondente. Comandos podem ser combinados usando "+".
+
+Se eu enviar apenas "/", mostre o menu de categorias e comandos disponíveis. Se eu escrever "/" + parte de uma palavra, trate como busca.
+
+PRESERVE FIELMENTE O OBJETO ORIGINAL. Em motocicletas preserve modelo, proporções, rodas, pneus, suspensão, faróis, acessórios, crash bars, adesivos, grafismos, cores e números. Não invente peças nem descaracterize a moto sem solicitação.
+
+COMANDOS INTELIGENTES:
+/DIRECTOR = escolha automaticamente câmera, lente, luz, composição e tratamento.
+/EPIC = cena épica/cinematográfica.
+/REAL = máximo fotorealismo.
+/PRESERVE = máxima fidelidade.
+/PRO = tratamento profissional.
+/VIZINHO = identidade vermelho/preto/branco, adventure/rally premium.
+/133 = identidade 133.
+/VIZINHO133 = VIZINHO + 133 + Adventure + Rally + Lifestyle.
+/RAVENNA = Africa Twin, preservando sua identidade.
+/RALLY133 = rally + race + dust + 133 + VIZINHO.
+/CAPA = composição de capa.
+/ADS = publicidade.
+/SPONSOR = patrocinador.
+/DVR = apresentação de adesivagem/envelopamento.
+
+FOTOGRAFIA:
+/proshot /bokeh /cinematic /hdr /raw /film /vintage /analog /polaroid /editorial /fashion /luxury /commercial /advertising /catalog /studio /product /hero /clean /dramatic /moody /vivid /desaturated /monochrome /noir /filmgrain
+
+CÂMERA:
+/droneview /topview /frontview /rearview /sideview /3quarter /lowangle /highangle /actioncam /helmetcam /tracking /orbit /closeup /detail /wideangle /telephoto /macro /overhead /groundcam
+
+LUZ:
+/goldenhour /sunrise /sunset /bluehour /nightshot /daylight /backlight /rimlight /dramaticlight /softlight /hardlight /neon /headlight /moodylight /studio_light /spotlight
+
+MOTO:
+/rally /race /dakar /enduro /offroad /adventure /expedition /desertraid /mudride /dust /dusttrail /roost /extreme /speed /action /jump /rallyposter /raceposter
+
+CENÁRIOS:
+/city /urban /highway /trail /dirtroad /gravel /mud /jungle /forest /mountain /desert /beach /river /waterfall /farm /camping /gasstation /garage /workshop /track
+
+MOVIMENTO:
+/motionblur /panning /speedblur /rolling /chase /actionfreeze /longexposure /dynamic
+
+TRATAMENTO:
+/redblack /contrast /matte /glossy /grunge /dirty /dark /vivid /orangeblue /tealorange /sharpen /soft /premium /rawlook
+
+SOCIAL:
+/instagram /instagran /reels /story /feed /carousel /thumbnail /thumb /poster /cover /viral /ad
+
+MARCA:
+/motomag /magazine /campaign /brand /sponsor /event /merch
+
+Quando eu enviar foto sem comando, analise e sugira até 3 opções. Quando eu disser "faz a primeira", gere imediatamente.
+
+Quando usar /instagram, /reels, /story, /poster, /thumbnail ou /cover, adapte a composição ao formato, não apenas recorte.
+
+Priorize realismo, preservação e impacto visual. Evite deformações, peças inventadas, HDR exagerado e aparência genérica de IA.
+
+Se houver acesso ao Notion, crie/manter "VIZINHO — Biblioteca de Comandos de Imagem" com Comando, Categoria, Descrição, Uso, Combinações, Conflitos, Formato, Personalizado VIZINHO e Observações.
+
+Você é meu fotógrafo, diretor de fotografia e diretor de arte.`;
+
+function copyPrompt(){
+  const done=()=>{const t=document.getElementById('toast');t.style.display='block';setTimeout(()=>t.style.display='none',2200)};
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(promptText).then(done);return}
+  const ta=document.createElement('textarea');ta.value=promptText;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');done()}catch(e){ta.style.opacity='1';ta.style.position='static';ta.style.width='100%';alert('Selecione e copie o texto exibido.')}finally{ta.remove()}
+}
+</script>
+</body>
+</html>
