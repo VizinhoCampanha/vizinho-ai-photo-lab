@@ -70,4 +70,8 @@ function track(){
  const next=flow[current+1];
  nextEl.textContent=next ? next.label : "Projeto concluído";
  meta.innerHTML=[item.id,item.brand,item.model,item.year,item.style,item.graphicStatus].filter(Boolean).map(x=>'<span class="pill">'+esc(x)+'</span>').join("");
-}>
+}
+loadProjects();
+</script>
+</body>
+</html>
