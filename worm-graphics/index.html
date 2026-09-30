@@ -42,7 +42,10 @@ async function loadProjects(){
 }
 function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
 function track(){
- const c=document.getElementById("code").value.trim().toUpperCase(),s=document.getElementById("status"),t=document.getElementById("statusTitle"),p=document.getElementById("statusText"),meta=document.getElementById("meta"),steps=document.getElementById("steps");
+ const raw=document.getElementById("code").value.trim().toUpperCase(),s=document.getElementById("status"),t=document.getElementById("statusTitle"),p=document.getElementById("statusText"),meta=document.getElementById("meta"),steps=document.getElementById("steps");
+ // Aceita WORM-0001, WORM-1 e até WORM--1, normalizando tudo para o ID oficial.
+ const match=raw.match(/^WORM[-\\s]*0*(\\d+)$/i);
+ const c=match ? "WORM-"+String(Number(match[1])).padStart(4,"0") : raw;
  s.style.display="block"; const item=projects.find(x=>x.id===c);
  if(!item){t.textContent="Projeto não encontrado";p.textContent="Confira o código informado ou fale com a Worm Graphics.";meta.innerHTML="";steps.innerHTML="";return}
  t.textContent=item.title;p.textContent="Acompanhamento atualizado a partir dos dados operacionais da Worm.";
