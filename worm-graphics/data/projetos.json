@@ -1,26 +1,5 @@
 {
   "source": "Notion — Worm Graphics / Projetos",
-  "updatedAt": "2026-09-30T19:02:00Z",
-  "projects": [
-    {
-      "id": "WORM-0002",
-      "title": "CFMoto Ibex 450 2027",
-      "brand": "CF Moto",
-      "model": "Ibex 450",
-      "year": 2026,
-      "style": "Adventure",
-      "status": "Renderizar MOLDE",
-      "graphicStatus": "Renderizando molde"
-    },
-    {
-      "id": "WORM-0001",
-      "title": "Africa Twin 1100 2021",
-      "brand": "Honda",
-      "model": "Africa Twin",
-      "year": 2021,
-      "style": "Original",
-      "status": "Aguardando Pagamento",
-      "graphicStatus": "Em produção"
-    }
-  ]
+  "updatedAt": "2026-09-30T22:59:15.765Z",
+  "projects": []
 }
