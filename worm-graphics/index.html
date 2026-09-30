@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Worm Graphics — Sua moto. Sua identidade.</title>
+<meta name="description" content="Worm Graphics — gráficos e identidade visual para motos.">
+<style>
+:root{--red:#e10600;--black:#070707;--card:#111;--line:#292929;--white:#f5f5f5;--muted:#a6a6a6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #202020;position:sticky;top:0;background:#070707ee;backdrop-filter:blur(10px);z-index:5}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1px}.mark{width:40px;height:40px;border:3px solid white;border-radius:10px;display:grid;place-items:center}.mark span{background:var(--red);width:25px;height:25px;display:grid;place-items:center;font-size:22px;font-weight:900}
+nav a{color:#bbb;text-decoration:none;margin-left:20px;font-size:13px;font-weight:700;text-transform:uppercase}nav a:hover{color:white}
+.hero{min-height:650px;display:grid;align-items:center;padding:80px 0;background:radial-gradient(circle at 85% 35%,#e106001c,transparent 30%),linear-gradient(145deg,#090909,#111)}
+.kicker{color:#e10600;font-size:12px;font-weight:900;letter-spacing:4px;text-transform:uppercase}.hero h1{font-size:clamp(50px,9vw,105px);line-height:.88;margin:15px 0 25px;text-transform:uppercase;max-width:850px}.hero h1 span{color:var(--red)}.hero p{max-width:610px;color:#bcbcbc;font-size:18px;line-height:1.6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 22px;border-radius:10px;text-decoration:none;font-weight:900;text-transform:uppercase;font-size:13px}.primary{background:var(--red);color:white}.secondary{border:1px solid #444;color:white}
+section{padding:85px 0}.section-title{font-size:38px;margin:0 0 10px;text-transform:uppercase}.section-sub{color:#999;max-width:620px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.card{min-height:250px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#151515,#0d0d0d);padding:24px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative}.card:before{content:"W";position:absolute;right:-20px;top:-60px;font-size:210px;font-weight:900;color:#ffffff05}.tag{color:var(--red);font-size:11px;font-weight:900;letter-spacing:2px}.card h3{margin:8px 0 4px;font-size:23px}.card p{margin:0;color:#888;font-size:13px}
+.track{max-width:700px;border:1px solid var(--line);border-radius:20px;padding:26px;background:#101010;margin-top:28px}.track input{width:100%;padding:17px;border-radius:10px;border:1px solid #333;background:#080808;color:white;font-size:16px;outline:none}.track button{width:100%;margin-top:12px;padding:16px;border:0;border-radius:10px;background:var(--red);color:white;font-weight:900;cursor:pointer}.status{display:none;margin-top:22px;border-top:1px solid #292929;padding-top:20px}.status strong{font-size:20px}.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:18px}.step{height:8px;border-radius:10px;background:#292929}.step.active{background:var(--red)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{border:1px solid var(--line);border-radius:18px;padding:28px;background:#101010}.contact-box a{color:white;text-decoration:none}.big{font-size:28px;font-weight:900;margin:8px 0 0}
+footer{border-top:1px solid #202020;padding:30px 0;color:#666;font-size:12px;text-align:center}
+@media(max-width:760px){nav{display:none}.hero{min-height:570px}.grid,.contact{grid-template-columns:1fr}.steps{grid-template-columns:repeat(3,1fr)}section{padding:65px 0}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap" style="width:100%;display:flex;justify-content:space-between;align-items:center"><div class="brand"><div class="mark"><span>W</span></div>WORM GRAPHICS</div><nav><a href="#projetos">Projetos</a><a href="#acompanhar">Acompanhar</a><a href="#contato">Contato</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="kicker">Worm Graphics • Motorcycle Graphics</div><h1>Sua moto.<br><span>Sua identidade.</span></h1><p>Gráficos personalizados para transformar sua moto em algo único. Design, identidade e presença visual para quem não quer rodar igual a todo mundo.</p><div class="actions"><a class="btn primary" href="#projetos">Ver projetos</a><a class="btn secondary" href="#acompanhar">Acompanhar projeto</a><a class="btn secondary" href="#contato">Pedir orçamento</a></div></div></section>
+<section id="projetos"><div class="wrap"><h2 class="section-title">Projetos</h2><p class="section-sub">Uma galeria preparada para receber os trabalhos finalizados da Worm Graphics.</p><div class="grid"><article class="card"><div class="tag">PORTFÓLIO</div><h3>Seu próximo projeto</h3><p>Imagem da moto • modelo • estilo</p></article><article class="card"><div class="tag">PORTFÓLIO</div><h3>Identidade própria</h3><p>Arte personalizada • acabamento premium</p></article><article class="card"><div class="tag">PORTFÓLIO</div><h3>Feito para rodar</h3><p>Design • aplicação • resultado final</p></article></div></div></section>
+<section id="acompanhar"><div class="wrap"><h2 class="section-title">Acompanhe seu projeto</h2><p class="section-sub">Digite o código recebido da Worm para consultar o andamento.</p><div class="track"><input id="code" placeholder="Ex.: WORM-0001" autocomplete="off"><button onclick="track()">CONSULTAR PROJETO</button><div class="status" id="status"><div class="tag">WORM GRAPHICS</div><strong id="statusTitle">Projeto encontrado</strong><p id="statusText">Status demonstrativo da V1. A integração com o Notion será adicionada depois.</p><div class="steps"><div class="step active"></div><div class="step active"></div><div class="step active"></div><div class="step"></div><div class="step"></div><div class="step"></div></div></div></div></div></section>
+<section id="contato"><div class="wrap"><h2 class="section-title">Vamos criar?</h2><p class="section-sub">Entre em contato e conte como você quer deixar sua moto.</p><div class="contact"><div class="contact-box"><div class="tag">WHATSAPP</div><div class="big">Pedir orçamento</div><p style="color:#999">Link será conectado ao WhatsApp da Worm.</p></div><div class="contact-box"><div class="tag">INSTAGRAM</div><div class="big">@wormgraphics</div><p style="color:#999">Perfil oficial da Worm Graphics.</p></div></div></div></section>
+</main>
+<footer>© 2026 WORM GRAPHICS • SUA MOTO. SUA IDENTIDADE.</footer>
+<script>
+function track(){const c=document.getElementById('code').value.trim().toUpperCase();const s=document.getElementById('status');const t=document.getElementById('statusTitle');const p=document.getElementById('statusText');s.style.display='block';if(!c){t.textContent='Digite um código';p.textContent='Use um código no formato WORM-0001.';return}t.textContent='Projeto '+c+' encontrado';p.textContent='Status demonstrativo: Arte aprovada → próximo passo: renderizar molde. A consulta real será ligada ao Notion da Worm.'}
+</script>
+</body>
+</html>
