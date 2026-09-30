@@ -13,10 +13,10 @@ nav a{color:#bbb;text-decoration:none;margin-left:20px;font-size:13px;font-weigh
 .hero{min-height:650px;display:grid;align-items:center;padding:80px 0;background:radial-gradient(circle at 85% 35%,#e106001c,transparent 30%),linear-gradient(145deg,#090909,#111)}
 .kicker,.tag{color:var(--red);font-size:11px;font-weight:900;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(50px,9vw,105px);line-height:.88;margin:15px 0 25px;text-transform:uppercase;max-width:850px}.hero h1 span{color:var(--red)}.hero p{max-width:610px;color:#bcbcbc;font-size:18px;line-height:1.6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 22px;border-radius:10px;text-decoration:none;font-weight:900;text-transform:uppercase;font-size:13px}.primary{background:var(--red);color:white}.secondary{border:1px solid #444;color:white}
 section{padding:85px 0}.section-title{font-size:38px;margin:0 0 10px;text-transform:uppercase}.section-sub{color:#999;max-width:650px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.card{min-height:245px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#151515,#0d0d0d);padding:24px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative}.card:before{content:"W";position:absolute;right:-20px;top:-60px;font-size:210px;font-weight:900;color:#ffffff05}.card h3{margin:8px 0 4px;font-size:23px}.card p{margin:0;color:#888;font-size:13px}.empty{padding:30px;border:1px dashed #333;border-radius:16px;color:#777;margin-top:25px}.sync{font-size:11px;color:#666;margin-top:12px}
-.track{max-width:700px;border:1px solid var(--line);border-radius:20px;padding:26px;background:#101010;margin-top:28px}.track input{width:100%;padding:17px;border-radius:10px;border:1px solid #333;background:#080808;color:white;font-size:16px;outline:none;text-transform:uppercase}.track button{width:100%;margin-top:12px;padding:16px;border:0;border-radius:10px;background:var(--red);color:white;font-weight:900;cursor:pointer}.status{display:none;margin-top:22px;border-top:1px solid #292929;padding-top:20px}.status strong{font-size:20px}.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:18px}.step{height:8px;border-radius:10px;background:#292929}.step.active{background:var(--red)}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.pill{border:1px solid #333;padding:7px 10px;border-radius:999px;color:#bbb;font-size:11px}
+.track{max-width:700px;border:1px solid var(--line);border-radius:20px;padding:26px;background:#101010;margin-top:28px}.track input{width:100%;padding:17px;border-radius:10px;border:1px solid #333;background:#080808;color:white;font-size:16px;outline:none;text-transform:uppercase}.track button{width:100%;margin-top:12px;padding:16px;border:0;border-radius:10px;background:var(--red);color:white;font-weight:900;cursor:pointer}.status{display:none;margin-top:22px;border-top:1px solid #292929;padding-top:24px}.status strong{font-size:22px}.status-current{margin:16px 0 20px;padding:16px 18px;border-left:4px solid var(--red);background:#151515;border-radius:0 12px 12px 0}.status-current small{display:block;color:#888;text-transform:uppercase;font-size:10px;font-weight:900;letter-spacing:2px;margin-bottom:6px}.status-current b{font-size:16px}.timeline{display:flex;flex-direction:column;margin:22px 0}.timeline-item{display:grid;grid-template-columns:30px 1fr;min-height:52px;position:relative}.timeline-item:not(:last-child):after{content:"";position:absolute;left:9px;top:20px;bottom:0;width:2px;background:#292929}.timeline-dot{width:20px;height:20px;border-radius:50%;border:2px solid #444;background:#101010;z-index:1;margin-top:1px}.timeline-item.done .timeline-dot{background:var(--red);border-color:var(--red)}.timeline-item.current .timeline-dot{background:var(--red);border-color:white;box-shadow:0 0 0 4px #e1060030}.timeline-item.done:not(:last-child):after,.timeline-item.current:not(:last-child):after{background:var(--red)}.timeline-label{font-size:14px;font-weight:700;padding:1px 0 20px}.timeline-item:not(.done):not(.current) .timeline-label{color:#777}.timeline-item.current .timeline-label{color:white}.timeline-label span{display:block;font-size:10px;color:#888;font-weight:400;margin-top:3px}.next-step{margin-top:18px;padding:14px 16px;border:1px solid #292929;border-radius:12px;background:#0b0b0b}.next-step b{display:block;font-size:13px;margin-top:4px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #333;padding:7px 10px;border-radius:999px;color:#bbb;font-size:11px}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{border:1px solid var(--line);border-radius:18px;padding:28px;background:#101010}.big{font-size:28px;font-weight:900;margin:8px 0}
 footer{border-top:1px solid #202020;padding:30px 0;color:#666;font-size:12px;text-align:center}
-@media(max-width:760px){nav{display:none}.hero{min-height:570px}.grid,.contact{grid-template-columns:1fr}.steps{grid-template-columns:repeat(3,1fr)}section{padding:65px 0}}
+@media(max-width:760px){nav{display:none}.hero{min-height:570px}.grid,.contact{grid-template-columns:1fr}.track{padding:20px}.timeline-label{font-size:13px}section{padding:65px 0}}
 </style>
 </head>
 <body>
@@ -24,13 +24,22 @@ footer{border-top:1px solid #202020;padding:30px 0;color:#666;font-size:12px;tex
 <main>
 <section class="hero"><div class="wrap"><div class="kicker">Worm Graphics • Motorcycle Graphics</div><h1>Sua moto.<br><span>Sua identidade.</span></h1><p>Gráficos personalizados para transformar sua moto em algo único. Design, identidade e presença visual para quem não quer rodar igual a todo mundo.</p><div class="actions"><a class="btn primary" href="#projetos">Ver projetos</a><a class="btn secondary" href="#acompanhar">Acompanhar projeto</a><a class="btn secondary" href="#contato">Pedir orçamento</a></div></div></section>
 <section id="projetos"><div class="wrap"><h2 class="section-title">Projetos</h2><p class="section-sub">Os dados abaixo são carregados do banco de Projetos da Worm Graphics no Notion.</p><div id="projects" class="grid"></div><div id="syncInfo" class="sync"></div></div></section>
-<section id="acompanhar"><div class="wrap"><h2 class="section-title">Acompanhe seu projeto</h2><p class="section-sub">Digite o código recebido da Worm para consultar o andamento.</p><div class="track"><input id="code" placeholder="Ex.: WORM-0001" autocomplete="off"><button onclick="track()">CONSULTAR PROJETO</button><div class="status" id="status"><div class="tag">WORM GRAPHICS</div><strong id="statusTitle"></strong><p id="statusText"></p><div class="meta" id="meta"></div><div class="steps" id="steps"></div></div></div></div></section>
+<section id="acompanhar"><div class="wrap"><h2 class="section-title">Acompanhe seu projeto</h2><p class="section-sub">Digite o código recebido da Worm para consultar o andamento.</p><div class="track"><input id="code" placeholder="Ex.: WORM-0001" autocomplete="off"><button onclick="track()">CONSULTAR PROJETO</button><div class="status" id="status"><div class="tag">WORM GRAPHICS</div><strong id="statusTitle"></strong><div class="status-current"><small>STATUS ATUAL</small><b id="statusCurrent"></b></div><p id="statusText"></p><div class="timeline" id="timeline"></div><div class="next-step"><small style="color:#888;text-transform:uppercase;font-size:10px;font-weight:900;letter-spacing:2px">PRÓXIMO PASSO</small><b id="nextStep"></b></div><div class="meta" id="meta"></div></div></div></div></section>
 <section id="contato"><div class="wrap"><h2 class="section-title">Vamos criar?</h2><p class="section-sub">Entre em contato e conte como você quer deixar sua moto.</p><div class="contact"><div class="contact-box"><div class="tag">WHATSAPP</div><div class="big">Pedir orçamento</div><p style="color:#999">Link será conectado ao WhatsApp da Worm.</p></div><div class="contact-box"><div class="tag">INSTAGRAM</div><div class="big">@wormgraphics</div><p style="color:#999">Perfil oficial da Worm Graphics.</p></div></div></div></section>
 </main>
 <footer>© 2026 WORM GRAPHICS • SUA MOTO. SUA IDENTIDADE.</footer>
 <script>
 let projects=[];
-const flow=["Conversando","Interessado","Pausado","Criar ARTE","Arte Aprovada","Renderizar MOLDE","Aprovar MOLDE","Aguardando Pagamento","Em Produção","Enviado","Concluído"];
+const flow=[
+ {key:"briefing",label:"Briefing e referências",match:["Conversando","Interessado","Pausado"]},
+ {key:"arte",label:"Criação da arte",match:["Criar ARTE"]},
+ {key:"aprovada",label:"Arte aprovada",match:["Arte Aprovada"]},
+ {key:"render",label:"Render do molde",match:["Renderizar MOLDE"]},
+ {key:"molde",label:"Molde aprovado",match:["Aprovar MOLDE"]},
+ {key:"producao",label:"Produção na Worm",match:["Em Produção","Em produção"]},
+ {key:"despacho",label:"Despacho",match:["Enviado"]},
+ {key:"entrega",label:"Entrega",match:["Concluído"]}
+];
 async function loadProjects(){
  const box=document.getElementById("projects");
  try{
@@ -42,17 +51,23 @@ async function loadProjects(){
 }
 function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
 function track(){
- const raw=document.getElementById("code").value.trim().toUpperCase(),s=document.getElementById("status"),t=document.getElementById("statusTitle"),p=document.getElementById("statusText"),meta=document.getElementById("meta"),steps=document.getElementById("steps");
- // Aceita WORM-0001, WORM-1 e até WORM--1, normalizando tudo para o ID oficial.
+ const raw=document.getElementById("code").value.trim().toUpperCase(),s=document.getElementById("status"),t=document.getElementById("statusTitle"),p=document.getElementById("statusText"),meta=document.getElementById("meta"),timeline=document.getElementById("timeline"),currentEl=document.getElementById("statusCurrent"),nextEl=document.getElementById("nextStep");
  const match=raw.match(/^WORM[-\\s]*0*(\\d+)$/i);
  const c=match ? "WORM-"+String(Number(match[1])).padStart(4,"0") : raw;
  s.style.display="block"; const item=projects.find(x=>x.id===c);
- if(!item){t.textContent="Projeto não encontrado";p.textContent="Confira o código informado ou fale com a Worm Graphics.";meta.innerHTML="";steps.innerHTML="";return}
- t.textContent=item.title;p.textContent="Acompanhamento atualizado a partir dos dados operacionais da Worm.";
- meta.innerHTML=[item.id,item.brand,item.model,item.year,item.style,item.graphicStatus].filter(Boolean).map(x=>`<span class="pill">${esc(x)}</span>`).join("");
- const current=flow.indexOf(item.status); steps.innerHTML=flow.slice(0,6).map((_,i)=>`<div class="step ${i<=Math.min(Math.max(current,0),5)?"active":""}"></div>`).join("");
-}
-loadProjects();
-</script>
-</body>
-</html>
+ if(!item){t.textContent="Projeto não encontrado";currentEl.textContent="";p.textContent="Confira o código informado ou fale com a Worm Graphics.";meta.innerHTML="";timeline.innerHTML="";nextEl.textContent="";return}
+ t.textContent=item.title;
+ const sourceStatus=item.graphicStatus||item.status||"";
+ const current=Math.max(0,flow.findIndex(stage=>stage.match.some(v=>v.toLowerCase()===sourceStatus.toLowerCase() || v.toLowerCase()===String(item.status||"").toLowerCase())));
+ const currentStage=flow[current]||flow[0];
+ currentEl.textContent=currentStage.label;
+ p.textContent="Acompanhamento atualizado a partir dos dados operacionais da Worm.";
+ timeline.innerHTML=flow.map((stage,i)=>{
+   const state=i<current?"done":i===current?"current":"";
+   const detail=i<current?"Concluído":i===current?"Em andamento":"Próxima etapa";
+   return '<div class="timeline-item '+state+'"><div class="timeline-dot"></div><div class="timeline-label">'+stage.label+'<span>'+detail+'</span></div></div>';
+ }).join("");
+ const next=flow[current+1];
+ nextEl.textContent=next ? next.label : "Projeto concluído";
+ meta.innerHTML=[item.id,item.brand,item.model,item.year,item.style,item.graphicStatus].filter(Boolean).map(x=>'<span class="pill">'+esc(x)+'</span>').join("");
+}>
