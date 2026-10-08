@@ -33,7 +33,10 @@ function select(prop) {
 }
 
 function number(prop) {
-  return prop?.number ?? null;
+  if (!prop) return null;
+  if (prop.type === "number") return prop.number ?? null;
+  if (prop.type === "unique_id") return prop.unique_id?.number ?? null;
+  return prop.number ?? null;
 }
 
 function publicTitle(raw) {
