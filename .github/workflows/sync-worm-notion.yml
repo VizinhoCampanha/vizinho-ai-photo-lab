@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add worm-graphics/data/projetos.json
+          git add public/data/projetos.json
           git diff --cached --quiet || git commit -m "Sync Worm projects from Notion"
           git push

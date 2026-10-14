@@ -1,0 +1,5 @@
+node_modules/
+.next/
+.node-v*-win-x64.zip
+node-v*-win-x64/
+npm-debug.log*

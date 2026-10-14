@@ -66,6 +66,6 @@ const output = {
   projects
 };
 
-await fs.mkdir("worm-graphics/data", { recursive: true });
-await fs.writeFile("worm-graphics/data/projetos.json", JSON.stringify(output, null, 2) + "\n");
+await fs.mkdir("public/data", { recursive: true });
+await fs.writeFile("public/data/projetos.json", JSON.stringify(output, null, 2) + "\n");
 console.log(`Synced ${projects.length} projects from Notion.`);
