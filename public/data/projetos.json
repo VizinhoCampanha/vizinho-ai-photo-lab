@@ -1,7 +1,17 @@
 {
   "source": "Notion — Worm Graphics / Projetos",
-  "updatedAt": "2026-10-19T14:11:30.248Z",
+  "updatedAt": "2026-10-19T19:54:10.478Z",
   "projects": [
+    {
+      "id": "WORM-0005",
+      "title": "Suzuki V-Strom 1050 2025/26",
+      "brand": "Suzuki",
+      "model": "V-Strom 1050",
+      "year": 2025,
+      "style": "Rally",
+      "status": "Criar ARTE",
+      "graphicStatus": "Não enviado"
+    },
     {
       "id": "WORM-0004",
       "title": "Yamaha Ténéré 700 2026",
@@ -29,8 +39,8 @@
       "model": "Ibex 450",
       "year": 2026,
       "style": "Adventure",
-      "status": "Enviado",
-      "graphicStatus": "Despachado"
+      "status": "Concluído",
+      "graphicStatus": "Entregue"
     },
     {
       "id": "WORM-0001",
@@ -39,8 +49,8 @@
       "model": "Africa Twin",
       "year": 2021,
       "style": "Original",
-      "status": "Enviado",
-      "graphicStatus": "Despachado"
+      "status": "Concluído",
+      "graphicStatus": "Entregue"
     }
   ]
 }
