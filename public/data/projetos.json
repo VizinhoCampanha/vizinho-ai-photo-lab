@@ -1,7 +1,17 @@
 {
   "source": "Notion — Worm Graphics / Projetos",
-  "updatedAt": "2026-10-22T09:38:31.863Z",
+  "updatedAt": "2026-10-22T14:39:39.129Z",
   "projects": [
+    {
+      "id": "WORM-0006",
+      "title": "MXF 150 R 2025",
+      "brand": "Outras",
+      "model": "Outros",
+      "year": 2025,
+      "style": "",
+      "status": "Renderizar MOLDE",
+      "graphicStatus": "Renderizando molde"
+    },
     {
       "id": "WORM-0005",
       "title": "Suzuki V-Strom 1050 2025/26",
